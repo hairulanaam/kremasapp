@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".LogRes.Login">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:textSize="45dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/line_et2"
+                        android:drawableLeft="@drawable/icon_person"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:paddingLeft="12dp"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/line_et2"
+                        android:drawableLeft="@drawable/lock"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="@color/black"
+                        android:paddingLeft="12dp"
+                        android:inputType="textPassword"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lupapw"
+                    android:text="Lupa Password"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/login"
+                    app:backgroundTint="@null"
+                    android:text="Login"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/gradient"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="27dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Belum Punya Akun?"
+                        android:paddingEnd="6dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/daftar"
+                        android:text="Daftar"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="#43A048"/>
+                </LinearLayout>
+
+
+                <!--            <Button-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:id="@+id/register"-->
+                <!--                android:text="Register"-->
+                <!--                android:layout_below="@id/login"/>-->
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputDatDiri">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Back"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Isi formulir di bawah ini"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Identitas diri"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="No KTP"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:id="@+id/no_ktp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line_et2"
+                    android:fontFamily="@font/poppinsregular"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Nama Lengkap"
+                    android:textSize="16dp"
+                    android:layout_marginTop="3dp"/>
+
+                <EditText
+                    android:id="@+id/nama_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line_et2"
+                    android:fontFamily="@font/poppinsregular"
+                    android:inputType="text"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="No Handphone"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:id="@+id/no_hp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line_et2"
+                    android:fontFamily="@font/poppinsregular"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Foto KTP"
+                    android:textSize="17dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/gambar_et"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line_et2"
+                        android:scaleType="center"
+                        android:src="@drawable/camera" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Data tempat tinggal"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Alamat Rumah"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:id="@+id/alamat_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/line_et2"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Masukkan alamat rumah dengan lengkap"
+                    android:gravity="top"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Detail barang"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Jenis Barang"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:id="@+id/jenisbrg_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line_et2"
+                    android:fontFamily="@font/poppinsregular"
+                    android:inputType="text"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Detail barang yang diinginkan"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/poppinsregular"/>
+
+                <EditText
+                    android:id="@+id/detail_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:hint="Masukkan merk dan tipe barang yang diiginkan"
+                    android:background="@drawable/line_et2"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"
+                    android:minLines="5"
+                    android:gravity="top"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Pilih jenis angsuran"
+                    android:textSize="16dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jenis_angsuran">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/tiga"
+                        android:text="3 Bulan"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angsuran dicicil selama 3 kali pembayaran"
+                        android:textSize="12dp"
+                        android:layout_marginStart="30dp"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/enam"
+                        android:text="6 Bulan"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angsuran dicicil selama 6 kali pembayaran"
+                        android:textSize="12dp"
+                        android:layout_marginStart="30dp"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/duabelas"
+                        android:text="12 Bulan"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angsuran dicicil selama 12 kali pembayaran"
+                        android:textSize="12dp"
+                        android:layout_marginStart="30dp"
+                        android:fontFamily="@font/poppinsregular"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Jatuh Tempo"
+                            android:textSize="17dp" />
+
+                        <EditText
+                            android:id="@+id/tanggal_et"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/line_et2"
+                            android:fontFamily="@font/poppinsregular"
+                            android:inputType="date"
+                            android:focusable="false"
+                            android:paddingStart="8dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Jumlah Dp"
+                            android:textSize="17dp" />
+
+                        <EditText
+                            android:id="@+id/jumlahdp_et"
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/line_et2"
+                            android:fontFamily="@font/poppinsregular"
+                            android:inputType="text"
+                            android:paddingStart="8dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Kirim"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

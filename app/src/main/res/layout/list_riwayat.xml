@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardElevation="5dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_gravity="center">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tanggal"
+                android:text="Tanggal "
+                android:textColor="@color/green"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama"
+                android:text="Nama Pelanggan"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="17dp"
+                android:layout_marginTop="-5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/barang"
+                android:text="nama brang"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="17dp"
+                android:layout_marginTop="-5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Angsuran ke : "
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/angsurke"
+                    android:text="ke"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jumlah"
+                android:text="Bayar"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:gravity="end" />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line3"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp" />
+<!--    </androidx.cardview.widget.CardView>-->
+</LinearLayout>

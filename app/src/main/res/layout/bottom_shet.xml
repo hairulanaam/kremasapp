@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:text="Detail Angsuran"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        android:textColor="@color/green"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama"
+        android:text="Nama"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="23dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama_barang"
+            android:text="nama barang"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_barang"
+            android:text="detail barang"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total angsuran"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:text="total"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sisa angsuran"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sisa"
+            android:text="Sisa"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dp"
+            android:text="dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angsuran perbulan"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perbulan"
+            android:text="Angsuran perbulan"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Denda"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dendaa"
+            android:text="denda"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal jatuh tempo"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgl_tempo"
+            android:text="tanggal jatuh tempo"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angsuran ke"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/angsuran_ke"
+                android:text="Angsuran ke"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="18dp"
+                android:gravity="end" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:id="@+id/riwayat_bayar"
+                android:src="@drawable/down_arrow"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="-3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_line2"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="-15dp"/>
+    <include layout="@layout/riwayat_bayar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bayar angsuran"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/bayar_et"
+            android:inputType="number"
+            android:textSize="19dp"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/line_bayar"
+            android:paddingLeft="8dp"
+            android:hint="Masukkan nominal "
+            android:gravity="center|start"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bayar_button"
+            android:text="Bayar"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@drawable/bayar"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
