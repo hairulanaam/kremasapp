@@ -108,15 +108,22 @@ public class Register extends AppCompatActivity {
                     String namaa = nama.getText().toString();
                     String emaill = email.getText().toString();
                     String nomerr = no_telfon.getText().toString();
-
+                    if (!nomerr.startsWith("+62")) {
+                        nomerr = "+62" + nomerr;
+                    }
                     RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
 
+                    String finalNomerr = nomerr;
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.urlRegister,
                             new Response.Listener<String>() {
                                 @Override
                                 public void onResponse(String response) {
                                     progressDialog.dismiss();
-                                    showAlert();
+                                    if (response.equals("terdaftar")) {
+                                        Toast.makeText(getApplicationContext(), "Nama sudah terdaftar", Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        showAlert();
+                                    }
                                 }
                             }, new Response.ErrorListener() {
                         @Override
@@ -131,7 +138,7 @@ public class Register extends AppCompatActivity {
                             paramV.put("password", passwordd);
                             paramV.put("nama", namaa);
                             paramV.put("email", emaill);
-                            paramV.put("no_telfon", nomerr);
+                            paramV.put("no_handphone", finalNomerr);
                             paramV.put("image", base64Image);
                             return paramV;
 
