@@ -74,7 +74,7 @@ public class AturPassword extends AppCompatActivity {
         }
     }
     private void updatePassword(final String newPassword) {
-        String email = getIntent().getStringExtra("email");
+        String no = getIntent().getStringExtra("no_handphone");
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.aturpassword,
                 new Response.Listener<String>() {
                     @Override
@@ -93,7 +93,7 @@ public class AturPassword extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<>();
-                params.put("email", email);
+                params.put("no_handphone", no);
                 params.put("password", newPassword);
                 return params;
             }
