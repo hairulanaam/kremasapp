@@ -43,13 +43,13 @@ public class VerificationCode extends AppCompatActivity {
         progressDialog.setContentView(R.layout.custom_progress_dialog);
         progressDialog.setCancelable(false);
 
-        String email = getIntent().getStringExtra("email");
+        String no = getIntent().getStringExtra("no_handphone");
         verifikasi_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String enteredOtp = verifikasi_et.getText().toString().trim();
                 showProgressDialog();
-                verifyOtp(email, enteredOtp);
+                verifyOtp(no, enteredOtp);
             }
         });
     }
@@ -68,17 +68,17 @@ public class VerificationCode extends AppCompatActivity {
         }
     }
 
-    private void verifyOtp(final String email, final String enteredOtp) {
+    private void verifyOtp(final String no, final String enteredOtp) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.verifikasipassword,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         dismissProgressDialog();
                         if (response.equals("success")) {
-                            showAlert(email);
+                            showAlert(no);
 
                         } else {
-                            showAlertsalah(email);
+                            showAlertsalah(no);
                         }
                     }
                 },
@@ -92,8 +92,8 @@ public class VerificationCode extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<>();
-                params.put("email", email);
-                params.put("otp", enteredOtp);
+                params.put("no_handphone", no);
+                params.put("kode", enteredOtp);
                 return params;
             }
         };
@@ -102,7 +102,7 @@ public class VerificationCode extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-    public void showAlert(String email) {
+    public void showAlert(String no) {
         View dialogView = LayoutInflater.from(VerificationCode.this).inflate(R.layout.alert_otp, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(VerificationCode.this);
         builder.setView(dialogView);
@@ -113,12 +113,12 @@ public class VerificationCode extends AppCompatActivity {
         alertDialog.show();
 
         Intent intent = new Intent(VerificationCode.this, AturPassword.class);
-        intent.putExtra("email", email);
+        intent.putExtra("no_handphone", no);
         alertDialog.cancel();
         startActivity(intent);
     }
 
-    public void showAlertsalah(String email) {
+    public void showAlertsalah(String no) {
         View dialogView = LayoutInflater.from(VerificationCode.this).inflate(R.layout.alert_otpsalah, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(VerificationCode.this);
         builder.setView(dialogView);
