@@ -13,6 +13,7 @@ public class Api {
     public static final String riwayatbarang= "http://"+ip+"/tes/api_riwayatbarang.php";
     public static final String aturpassword= "http://"+ip+"/tes/reset_password.php";
     public static final String lupapassword= "http://"+ip+"/tes/sendemail.php";
+    public static final String lupapassword2= "http://"+ip+"/tes/sendsms.php";
     public static final String verifikasipassword= "http://"+ip+"/tes/api_verification.php";
     public static final String cekktp= "http://"+ip+"/tes/api_cekktp.php";
     public static final String foto= "http://"+ip+"/tes/";
