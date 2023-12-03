@@ -27,6 +27,7 @@ import com.google.android.material.textview.MaterialTextView;
 import com.project.angsurapp.Dashboard;
 import com.project.angsurapp.Api;
 import com.project.angsurapp.LupaPassword;
+import com.project.angsurapp.LupaPassword2;
 import com.project.angsurapp.R;
 
 import org.json.JSONException;
@@ -113,7 +114,7 @@ public class Login extends AppCompatActivity {
         lupapw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, LupaPassword.class));
+                startActivity(new Intent(Login.this, LupaPassword2.class));
                 overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             }
         });
